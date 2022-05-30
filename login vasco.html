@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.formulario {display: flex;
+  flex-direction: column;
+  gap:5px;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top:25px;
+}
+.formulario > input[type=submit]{
+  background: #C0C0C0;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #111;
+}
+.formulario > input[type=email],
+.formulario > input[type=password]{
+  text-align: center;
+  border-radius: 5px
+  border:1px solid #777;
+  color:#00000
+}
+.formulario > input[type=submit]:hover{
+background: #666
+}
+body, html {
+  margin: 0;
+  }
+  body { min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background:  #000000
+ }
+.formulario input{
+  padding: 10px
+}
+</style>
+</head>
+<body>
+  <form class="formulario" action="./links.html">
+    <img src="./guerreirin.png"/>
+  <input type="email" name="q" required="required" placeholder="Email">
+    <input type="password" name="q" required="required" placeholder="Password">
+
+    <input type="submit" value="enviar">
+  </form>
+</body>
+</html>
